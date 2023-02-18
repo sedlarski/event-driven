@@ -1,4 +1,4 @@
-package com.sedlarski.eventdriven.twittertokafka.service.config;
+package com.sedlarski.eventdriven.config;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -12,4 +12,8 @@ public class TwitterToKafkaServiceConfigData {
     private List<String> twitterKeywords;
     private String welcomeMessage;
     private String bearerToken;
+    private Boolean enableMockTweets;
+    private Integer mockMinTweetLength;
+    private Integer mockMaxTweetLength;
+    private Long mockSleepMs;
 }

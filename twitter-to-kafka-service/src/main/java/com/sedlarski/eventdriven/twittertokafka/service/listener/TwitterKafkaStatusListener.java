@@ -14,6 +14,6 @@ public class TwitterKafkaStatusListener extends StatusAdapter {
 
     @Override
     public void onStatus(Status status) {
-        LOGGER.info("Received status: {}", status.getText());
+        LOGGER.info("Received Twitter status with text: {}", status.getText());
     }
 }
