@@ -1,7 +1,7 @@
-package com.sedlarski.eventdriven.kafka.admin.config.client;
+package com.sedlarski.eventdriven.kafka.admin.client;
 
-import com.sedlarski.eventdriven.common.config.KafkaConfigData;
-import com.sedlarski.eventdriven.common.config.RetryConfigData;
+import com.sedlarski.eventdriven.config.KafkaConfigData;
+import com.sedlarski.eventdriven.config.RetryConfigData;
 import com.sedlarski.eventdriven.kafka.admin.exception.KafkaClientException;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
@@ -92,7 +92,7 @@ public class KafkaAdminClient {
         }
     }
 
-    private void checkSchemaRegistry() {
+    public void checkSchemaRegistry() {
         int retryCount = 1;
         Long maxRetry = retryConfigData.getMaxAttempts();
         Integer multiplier = retryConfigData.getMultiplier().intValue();

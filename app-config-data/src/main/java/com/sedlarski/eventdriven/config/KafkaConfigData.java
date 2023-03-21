@@ -1,4 +1,4 @@
-package com.sedlarski.eventdriven.common.config;
+package com.sedlarski.eventdriven.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.sedlarski.eventdriven"})
+@ComponentScan(basePackages = {"com.sedlarski"})
 public class TwitterToKafkaApplication implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TwitterToKafkaApplication.class);

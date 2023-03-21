@@ -1,5 +1,6 @@
 package com.sedlarski.eventdriven.common.config;
 
+import com.sedlarski.eventdriven.config.RetryConfigData;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.backoff.ExponentialBackOffPolicy;

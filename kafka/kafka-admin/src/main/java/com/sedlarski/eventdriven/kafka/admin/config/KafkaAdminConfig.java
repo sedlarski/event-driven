@@ -1,7 +1,7 @@
 package com.sedlarski.eventdriven.kafka.admin.config;
 
 
-import com.sedlarski.eventdriven.common.config.KafkaConfigData;
+import com.sedlarski.eventdriven.config.KafkaConfigData;
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.springframework.context.annotation.Bean;
